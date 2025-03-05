@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.RollTools" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/Bittersweet</item> <!-- El mismo color que el LinearLayout -->
+
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+</resources>

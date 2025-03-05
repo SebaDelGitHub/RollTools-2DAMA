@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/elegance"
+    tools:context=".Participantes">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/Bittersweet"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/casa" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Roll Tools"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btnMenuPop"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/puntos" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etParticipantes"
+        android:layout_width="340dp"
+        android:layout_height="443dp"
+        android:layout_margin="16dp"
+        android:background="@android:color/white"
+        android:gravity="top"
+        android:hint="Escribe los participantes, uno por línea"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/btnGenerar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.138" />
+
+    <Button
+        android:id="@+id/btnGenerar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/BrunsGreen"
+        android:text="Generar Equipos"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.852" />
+</androidx.constraintlayout.widget.ConstraintLayout>

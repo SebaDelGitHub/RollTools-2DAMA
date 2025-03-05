@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/elegance"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Título"
+            android:inputType="text"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etJuego"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Juego"
+            android:inputType="text"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:hint="Descripción"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="8dp"
+            android:background="@android:drawable/edit_text" />
+
+        <TextView
+            android:id="@+id/tvFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha no seleccionada"
+            android:padding="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:drawable/edit_text" />
+
+        <Button
+            android:id="@+id/btnSeleccionarFecha"
+            android:layout_width="match_parent"
+            android:background="@color/Bittersweet"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar fecha"
+            android:layout_marginBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/ivImagenSeleccionada"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeimg"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnSeleccionarImagen"
+            android:layout_width="match_parent"
+            android:background="@color/Bittersweet"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar imagen"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/JungleGreen"
+            android:textColor="@color/white"
+            android:text="Guardar"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volver"
+            android:background="@color/BrunsGreen"
+            android:textColor="@color/white"
+             />
+    </LinearLayout>
+</ScrollView>
